@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MT_Peer_Pressure.Effector">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="MT_Peer_Pressure.Effector.EffectorTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Effector.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAACAIgAAACAAAA=</HashCode>
+      <FileName>Effector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.Peer" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAgAAAIAAACCAAgAgAgAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Peer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.Pressure" BaseTypeListCollapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MT_Peer_Pressure.Pressure.State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Pressure.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gRgAEBBAAEAAIABAAAQACMAEgAhAAEAABAhAAAAIgBA=</HashCode>
+      <FileName>Pressure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.PPTrackVM" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAIAAAAAwAAEACAAAAgAAAAAAAA=</HashCode>
+      <FileName>Pressure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.MachineGUIFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PressureGUI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.PressureGUI" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="MT_Peer_Pressure.PressureGUI.PeerVM" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PressureGUI.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABAAAAASAAAAAAAFAAAABAAAAAAEAAAAAACAwAAAAAE=</HashCode>
+      <FileName>PressureGUI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.Relation">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAgAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Relation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.PPTarget">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAABAAAAAAAAEAAAAACAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MT_Peer_Pressure.ParameterTargetGUI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQACACAAAAAAAgCAIQAAACAAgAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParameterTargetGUI.cs</FileName>
+      <NewMemberFileName>Target.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="MT_Peer_Pressure.ITargetGUI">
+    <Position X="3" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Target.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

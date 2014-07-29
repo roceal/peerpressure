@@ -1,0 +1,44 @@
+[2012-01-19 22:58:01] <mtronic> sorta, doing this muting machine made me realise the target need not only be a param, but occasionally the machine itself
+[2012-01-19 22:58:30] <[UNZ]> but you already have references to machiens
+[2012-01-19 22:58:48] <[UNZ]> and yeah that makes it insanely powful
+[2012-01-19 22:59:00] <mtronic> thats the owner
+[2012-01-19 22:59:10] <mtronic> target is a param
+[2012-01-19 22:59:23] <[UNZ]> make it target machine->param
+[2012-01-19 22:59:37] <[UNZ]> multitarget of course
+[2012-01-19 22:59:42] <mtronic> so i need potential targets of machine, param, and maybe group for stating
+[2012-01-19 22:59:45] <[UNZ]> like peerctrl
+[2012-01-19 22:59:51] <mtronic> yeah
+[2012-01-19 23:01:00] <mtronic> and then make the effector idea better, so it can be midi, osc, etc, or another peer to slave
+[2012-01-19 23:01:21] <mtronic> etcetcetc
+[2012-01-19 23:03:03] <[UNZ]> and sound
+[2012-01-19 23:03:19] <[UNZ]> please build in audio peer
+[2012-01-19 23:03:22] <[UNZ]> what was it called
+[2012-01-19 23:03:23] <[UNZ]> peerenv
+[2012-01-19 23:03:28] <[UNZ]> as source
+[2012-01-19 23:03:34] <mtronic> and think of a way to make your connecting a machine to the peerlib 
+[2012-01-19 23:03:42] <[UNZ]> machine view style
+[2012-01-19 23:03:43] <mtronic> yeah, thats easy
+[2012-01-19 23:03:50] <[UNZ]> open a window like PAL
+[2012-01-19 23:03:57] <[UNZ]> where you connect control signals
+[2012-01-19 23:04:01] <[UNZ]> that shit is bomb
+[2012-01-19 23:04:25] <mtronic> well, i made need help with that sorta gui shit, but ive kept it in mind
+[2012-01-19 23:04:46] <mtronic> design is bloating....
+[2012-01-19 23:05:16] |<-- ichi_ has left irc.choopa.net (sleep or generally away .)
+[2012-01-19 23:05:21] <[UNZ]> i'll help
+[2012-01-19 23:05:26] <mtronic> :)
+[2012-01-19 23:05:34] <[UNZ]> maybe controlio should be built in
+[2012-01-19 23:05:47] * [UNZ] bloats more
+[2012-01-19 23:05:58] <mtronic> with the lib made right, that sort of gui can be a different machine
+[2012-01-19 23:06:09] <[UNZ]> true
+[2012-01-19 23:06:14] <mtronic> like a peer visualizer
+[2012-01-19 23:06:31] <[UNZ]> like peerctrl had a plugin system
+[2012-01-19 23:06:39] <[UNZ]> we have a base lib + machines
+[2012-01-19 23:06:44] <mtronic> or, if u have a touchscreen like me, a load of big buttons and sliders controlling shit :)
+[2012-01-19 23:06:52] <[UNZ]> !!
+[2012-01-19 23:06:53] <mtronic> yep
+[2012-01-19 23:07:08] <[UNZ]> or your xboxthngy
+[2012-01-19 23:07:12] <mtronic> the idea is to make building that shit easier
+[2012-01-19 23:07:18] <[UNZ]> yep
+[2012-01-19 23:07:21] <mtronic> yeah, thats what got me started on it
+[2012-01-19 23:07:22] <[UNZ]> would be insanely good
+[2012-01-19 23:07:57] <mtronic> well, time and cofee :)

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F2701B8-4D90-45BA-9CB9-B0C74285243F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MT_Peer_Pressure</RootNamespace>
+    <AssemblyName>MT Peer Pressure.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Program Files %28x86%29\Jeskola\Buzz\Gear\Generators\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>.\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="BuzzGUI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.dll</HintPath>
+    </Reference>
+    <Reference Include="BuzzGUI.Common">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="BuzzGUI.Interfaces">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Jeskola\Buzz\BuzzGUI.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Effectors\AudioEffector.cs" />
+    <Compile Include="Effectors\ButtonEffector.cs" />
+    <Compile Include="Effectors\ErrorEffector.cs" />
+    <Compile Include="Effectors\MidiEffector.cs" />
+    <Compile Include="Effectors\NoiseEffector.cs" />
+    <Compile Include="Effectors\NullEffector.cs" />
+    <Compile Include="Effectors\OSCEffector.cs" />
+    <Compile Include="Effectors\SliderEffector.cs" />
+    <Compile Include="Effectors\TimeEffector.cs" />
+    <Compile Include="ParameterViewer.xaml.cs">
+      <DependentUpon>ParameterViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PeerPressure.cs" />
+    <Compile Include="PeerVM.cs" />
+    <Compile Include="PPTime.cs" />
+    <Compile Include="Relations\ASDREnvelopeRelation.cs" />
+    <Compile Include="Relations\CropRelation.cs" />
+    <Compile Include="Relations\ExponentialRelation.cs" />
+    <Compile Include="Relations\InverseRelation.cs" />
+    <Compile Include="Relations\NoiseRelation.cs" />
+    <Compile Include="Relations\QuadraticRelation.cs" />
+    <Compile Include="Relations\TriggerRelation.cs" />
+    <Compile Include="selectRelation.xaml.cs">
+      <DependentUpon>selectRelation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="selectEffector.xaml.cs">
+      <DependentUpon>selectEffector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Effector.cs" />
+    <Compile Include="Effectors\LFOEffector.cs" />
+    <Compile Include="ParameterTargetGUI.cs" />
+    <Compile Include="Peer.cs" />
+    <Compile Include="PeerState.cs" />
+    <Compile Include="PressureGUI.cs" />
+    <Compile Include="Relation.cs" />
+    <Compile Include="Pressure.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relations\FrequencyRelation.cs" />
+    <Compile Include="Relations\InertiaRelation.cs" />
+    <Compile Include="Relations\ScaledRelation.cs" />
+    <Compile Include="Relations\SteppedRelation.cs" />
+    <Compile Include="Relations\StraightRelation.cs" />
+    <Compile Include="selectTarget.xaml.cs">
+      <DependentUpon>selectTarget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Target.cs" />
+    <Compile Include="Targets\MachineTargetGUI.cs" />
+    <Compile Include="Targets\MultiTarget.cs" />
+    <Compile Include="Targets\MuteTarget.cs" />
+    <Compile Include="Targets\NullTarget.cs" />
+    <Compile Include="Targets\ParameterTarget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ParameterViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="selectRelation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="selectEffector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ParameterTargetGUI.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="selectTarget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Targets\MachineTargetGUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PressureGUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
